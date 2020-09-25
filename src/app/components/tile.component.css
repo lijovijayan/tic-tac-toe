@@ -1,0 +1,12 @@
+.tile {
+  flex: 1;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+img {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  background-color: white;
+}
