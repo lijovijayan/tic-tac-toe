@@ -3,10 +3,16 @@
   margin: 10px;
   border-radius: 10px;
   background-color: white;
+  transition: background-color ease-in 0.5s;
 }
 img {
   width: 80%;
   height: 80%;
   margin: 10%;
   background-color: white;
+  transition: background-color ease-in 0.5s;
+}
+.highlight {
+  background-color: yellow;
+  transition: background-color ease-in 0.5s;
 }

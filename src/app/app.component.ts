@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   titleMessage: string;
   playerCrossPoints = 0;
   playerCirclePoints = 0;
+  highlighted = [];
   ngOnInit(): void {
     for (let i = 0; i < 9; i++) {
       this.activeTiles.push(Tiletype.empty);
@@ -69,6 +70,7 @@ export class AppComponent implements OnInit {
     this.matchCombos.forEach(combo => {
       if (entries.includes(combo[0]) && entries.includes(combo[1]) && entries.includes(combo[2])) {
         status = true;
+        this.highlighted = combo;
         return false;
       }
     });
@@ -89,10 +91,14 @@ export class AppComponent implements OnInit {
     this.loading = true;
     setTimeout(() => {
       this.loading = false;
+      this.highlighted = [];
       this.activeTiles.forEach((_, i) => this.activeTiles[i] = Tiletype.empty);
       this.activePlayer = ActivePlayer.cross;
       this.titleMessage = 'Player 1\'s(CROSS) Move';
     }, 2000);
+  }
+  getHighlight(index: number): boolean {
+    return this.highlighted.includes(index);
   }
   resetGame(): void {
     this.playerCirclePoints = 0;

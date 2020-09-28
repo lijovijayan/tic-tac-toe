@@ -4,19 +4,28 @@
   </div>
   <div class="app-container">
     <div style="display: flex;flex-direction: row; flex: 1;">
-      <app-tile (click)="onTapTile(0)" [tileType]="activeTiles && activeTiles[0]"></app-tile>
-      <app-tile (click)="onTapTile(1)" [tileType]="activeTiles && activeTiles[1]"></app-tile>
-      <app-tile (click)="onTapTile(2)" [tileType]="activeTiles && activeTiles[2]"></app-tile>
+      <app-tile [highlight]="getHighlight(0)" (click)="onTapTile(0)" [tileType]="activeTiles && activeTiles[0]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(1)" (click)="onTapTile(1)" [tileType]="activeTiles && activeTiles[1]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(2)" (click)="onTapTile(2)" [tileType]="activeTiles && activeTiles[2]">
+      </app-tile>
     </div>
     <div style="display: flex;flex-direction: row; flex: 1;">
-      <app-tile (click)="onTapTile(3)" [tileType]="activeTiles && activeTiles[3]"></app-tile>
-      <app-tile (click)="onTapTile(4)" [tileType]="activeTiles && activeTiles[4]"></app-tile>
-      <app-tile (click)="onTapTile(5)" [tileType]="activeTiles && activeTiles[5]"></app-tile>
+      <app-tile [highlight]="getHighlight(3)" (click)="onTapTile(3)" [tileType]="activeTiles && activeTiles[3]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(4)" (click)="onTapTile(4)" [tileType]="activeTiles && activeTiles[4]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(5)" (click)="onTapTile(5)" [tileType]="activeTiles && activeTiles[5]">
+      </app-tile>
     </div>
     <div style="display: flex;flex-direction: row; flex: 1;">
-      <app-tile (click)="onTapTile(6)" [tileType]="activeTiles && activeTiles[6]"></app-tile>
-      <app-tile (click)="onTapTile(7)" [tileType]="activeTiles && activeTiles[7]"></app-tile>
-      <app-tile (click)="onTapTile(8)" [tileType]="activeTiles && activeTiles[8]"></app-tile>
+      <app-tile [highlight]="getHighlight(6)" (click)="onTapTile(6)" [tileType]="activeTiles && activeTiles[6]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(7)" (click)="onTapTile(7)" [tileType]="activeTiles && activeTiles[7]">
+      </app-tile>
+      <app-tile [highlight]="getHighlight(8)" (click)="onTapTile(8)" [tileType]="activeTiles && activeTiles[8]">
+      </app-tile>
     </div>
   </div>
   <div class="row">

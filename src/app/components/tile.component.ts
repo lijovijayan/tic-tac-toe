@@ -7,6 +7,7 @@ import { Tiletype } from '../types';
 })
 export class TileComponent {
     @Input() tileType: Tiletype;
+    @Input() highlight: boolean;
     get tileIcon(): string {
         if (this.tileType === Tiletype.circle) {
             return '/assets/circle.png';
