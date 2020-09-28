@@ -1,6 +1,10 @@
 # TicTacToe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Simple Tic Tac Toe game developed with Angular Framework.
+
+# Screenshots
+![Screenshot 1](https://github.com/lijovijayan/tic-tac-toe/blob/master/screenshots/screenshots1.png)
+![Screenshot 2](https://github.com/lijovijayan/tic-tac-toe/blob/master/screenshots/screenshots2.png)
 
 ## Development server
 
