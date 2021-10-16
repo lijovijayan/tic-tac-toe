@@ -10,11 +10,11 @@ export class TileComponent {
     @Input() highlight: boolean;
     get tileIcon(): string {
         if (this.tileType === Tiletype.circle) {
-            return '/assets/circle.png';
+            return 'assets/circle.png';
         } else if (this.tileType === Tiletype.cross) {
-            return '/assets/cross.png';
+            return 'assets/cross.png';
         } else {
-            return '/assets/transparent.png';
+            return 'assets/transparent.png';
         }
     }
 }
